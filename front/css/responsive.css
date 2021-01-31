@@ -1,0 +1,252 @@
+@media screen and (max-width: 767px){
+    body{
+        overflow-x: hidden;
+    }
+    .parallax-window{
+        transform: inherit !important;
+    }
+    .take-a-look-img{
+        margin-left: 200px;
+        margin-top: 50px;
+        width:120px;
+    }
+    .soup span{
+        padding-left: 50px;
+    }
+    .soup img{
+        margin-top: 30px;
+        width:130px;
+    }
+    .salads-txt span{
+        padding-right: 20px;
+        margin-right: 20pslide carousel-multi-itemx;
+        margin-top: 0px;
+
+    }
+    .plate2{
+        width: 10px;
+        margin-top: 0px;
+    }
+    .appetizers{
+        
+    left: -100px;
+    }
+    .appetizers span{
+        
+    padding-left: 50px;   
+     }
+
+   .veg{
+    margin-top: 100px;
+    margin-left: 0px;
+    float: left;
+    top: 1630px;
+    left: 50px;
+    padding-left: 0px;
+    text-align: left;
+   
+    
+
+   }
+   .veg span{
+    
+    
+
+   }
+   .box-cont{
+    width: 100%;
+    height: auto;
+   }
+ .box-cont blockquote{
+  
+  padding-left: 0px;
+  
+
+}
+.container-fluid{
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+ .box-cont blockquote p{
+   
+   width: 340px;
+   padding-left: 5px;
+
+
+}
+
+.box-cont{
+    text-align: left;
+}
+.box-cont p{
+    text-align: left;
+}
+
+}
+@media screen and (max-width: 767px){
+.theRestaurant h1 {
+    font-size: 27px;
+    margin-bottom: 0px;
+}
+}
+@media screen and (max-width: 767px){
+    .circle {
+        width: 50%;
+        font-size: 15px;
+        padding: 5px;
+        margin: 5px;
+
+    }
+}
+@media screen and (max-width: 960px){
+.theRestaurant h1 {
+    font-size: 32px;
+}
+.brand{
+    width: 100px;
+}
+}
+@media screen and (max-width: 767px){
+.theRestaurant .textOverparallax p {
+    font-size: 14px;
+    line-height: 21px;
+}
+.cont{
+    margin: 0px;
+    padding:0px;
+}
+.intro{
+    padding:0px;
+    margin:0px;
+}
+.intro h2 {
+	font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .intro-slideshow{
+      background-size: cover;
+      margin:0px;
+      padding: 0px;
+      overflow: hidden;
+  }
+  .intro-slideshow img{
+      margin:0px;
+      padding: 0px;
+  }
+  .navbarmenu{
+      margin:0px;
+  }
+}
+
+@media screen and (max-width: 960px){
+.theRestaurant .textOverparallax p {
+    font-size: 15px;
+    line-height: 18px;
+}
+}
+@media screen and (max-width: 767px){
+    .atable h1,h3,img {
+        width: 80%;
+        font-size: 15px;
+        padding: 5px;
+        margin: 5px;
+
+    }
+}
+@media screen and (max-width: 767px){
+    .appetizers{
+        
+        width: 100%;
+        font-size: 15px;
+        padding-left: 35px;
+        margin-left: 35px;
+    }
+    .plate4 img{
+        width: 50%;
+        padding-left: 50px;
+        top:-150px;
+    }
+    }
+
+@media screen and (max-width: 767px){
+.theRestaurant .textOverparallax {
+    left: 0px;
+    padding: 20px;
+    top: 0px;
+    transform: inherit !important;
+}
+}
+@media screen and (max-width: 960px){
+    
+.theRestaurant .textOverparallax {
+    padding-right: 15px;
+    left: 34%;
+}
+}
+@media screen and (max-width: 960px){
+    
+    .theRestaurant .textOverparallax {
+        padding: 15px;
+        left: 0;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    }
+
+@media screen and (max-width: 767px){
+.theRestaurant .textOverparallax img, .parassol img {
+    margin: 0px;
+    max-width: 150px;
+    top: 100%;
+    display: none;
+}
+}
+@media screen and (max-width: 960px){
+.theRestaurant .textOverparallax img {
+    margin-left: -234px;
+    max-width: 216px;
+}
+}
+@media screen and (max-width: 767px){
+.theRestaurant .textOverparallax p {
+    font-size: 14px;
+    line-height: 21px;
+}
+}
+@media screen and (max-width: 960px){
+.theRestaurant .textOverparallax p {
+    font-size: 15px;
+    line-height: 23px;
+}
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){
+  
+   body{
+   width: 100%;
+   overflow-x: hidden;
+   }
+   .box-cont{
+    width: 500px;
+    height: auto;
+    margin-left: 0px;
+   }
+.img-thumbnail{
+    width:130px;
+}
+ .box-cont blockquote p{
+    padding-right: 10px;
+    width: 250px;
+    padding-left: 0px;
+}
+
+.child{
+    width: auto;
+
+}
+
+
+
+}

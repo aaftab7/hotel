@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head profile="http://taasrestaurent">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taas Restaurant</title>
+    <link rel="icon" type="image/png" href="front//Taas-Logo.png" style="width:16px;">
+    <link href="front/css/style.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ewert' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="front/js/main.js" defer></script>
+    <meta property="og:url" content="https://www.whatfontis.com/CR_Ananda-Neptouch-ttf-400.font">
+    <link href="https://www.whatfontis.com/CR_Ananda-Neptouch-ttf-400.font">
+    <link href="front/css/responsive.css" rel="stylesheet">
+
+    <script type='text/javascript' src="front/jquery/jquey.js"></script>
+    <script type='text/javascript' src="front/jquery/jquery-migrate.min.js"></script>
+    <script type='text/javascript' src="front/jquery/responsiveslides.js"></script>
+    <script type='text/javascript' src="front/jquery/parallax.js"></script>
+    <script type='text/javascript' src="front/jquery/ScrollMagic.js"></script>
+    <script type='text/javascript' src="front/jquery/debug.addIndicators.js"></script>
+    <script type='text/javascript' src="front/jquery/TweenMax.min.js"></script>
+    <script type='text/javascript' src="front/jquery/CSSPlugin.min.js"></script>
+    <script type='text/javascript' src="front/jquery/ScrollToPlugin.min.js"></script>
+    <script type='text/javascript' src="front/jquery/animation.gsap.js"></script>
+    <script type='text/javascript' src="front/jquery/jquery.mousewheel.js"></script>
+    <script type='text/javascript' src="front/jquery/pace.min.js"></script>
+    <script type='text/javascript' src="front/jquery/lethargy.js"></script>
+    <script type='text/javascript' src="front/jquery/customJS.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid cont">
+            <nav>
+                <div class="row">
+                    <div class="col-md-2 ">
+                        <a href="#"><img src="front/images/Taas-Logo.png" class="img-fluid brand "></a>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-md-8">
+                        <div class="togglearea">
+                            <label for="toggle">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </label>
+                        </div>
+                        <div class="navbarmenu">
+                            <input type="checkbox" id="toggle">
+                            <ul class="nav-menu float-right">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="" data-toggle="dropdown" href="#">Menu<i class="fa fa-caret-down"></i></a>
+                                    <div class="dropdown-menu">
+
+                                        <a class="dropdown-item" href="#"></a>
+                                    </div>
+                                </li>
+
+                                </li>
+                                <li><a href="{{action('Front\FrontController@gallery">Gallery</a></li>
+                                <li><a href="{{action('Front\ContactUsController@index">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-1">
+
+
+
+                    </div>
+            </nav>
+            </div>
+        </div>
+
+        <div class="intro">
+            <div class="overlay">
+                <div class="intro-slideshow">
+
+                    <img src="https://images.oyoroomscdn.com/uploads/hotel_image/18396/small/9f4ca9be07243dd8.jpg">
+                </div>
+            </div>
+            <div class="intro-header">
+                <div class="content-main text-center">
+                    <h2>Welcome to Taas<br> Restaurant</h2><br>
+                    <a href="#" type="button" class="btn1" value="" style="font-family: 'Montserrat', sans-serife">Book a Table</a>
+                    <a href="#" type="button" class="btn2" value="" style="font-family: 'Montserrat', sans-serife">Online Order</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section>
+        <div class="container-fluid">
+            <div class="popular-items">
+                <div class="popular-heading text-center pt-5">
+                    <h1 style="font-family: ewert;color: #bf0d16">POPULAR ITEMS</h1>
+                    <hr>
+                    <h5 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:#0d0348">GLIMPSE OF OUR POPULAR ITEMS</h5>
+                    <hr>
+                </div>
+                <div class="popular-image pt-5">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <div class="parent">
+                                    <div class="child bg-one" style="background: url('https://images.oyoroomscdn.com/uploads/hotel_image/18396/small/9f4ca9be07243dd8.jpg')" class="img-fluid">
+                                        <span><a href="#" type="button" class="btn" id="myBtn" data-toggle="modal" data-target="#exampleModal" >VIEW</a></span>
+
+                                        <!------hover image-->
+
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">{{$item->title}}</h5><br>
+
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="uploads/'.$item->image)}}" class="img-fluid"> {{$item->description}}
+                                            </div>
+                                            <strong class="modal-title ml-5" id="exampleModalLabel"> Price:£{{$item->price}} </strong>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="parent">
+                                    <div class="child bg-one" style="background: url('https://images.oyoroomscdn.com/uploads/hotel_image/18396/small/9f4ca9be07243dd8.jpg')" class="img-fluid">
+                                        <span><a href="#" type="button" class="btn" id="myBtn" data-toggle="modal" data-target="#exampleModal" >VIEW</a></span>
+
+                                        <!------hover image-->
+
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">{{$item->title}}</h5><br>
+
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="uploads/'.$item->image)}}" class="img-fluid"> {{$item->description}}
+                                            </div>
+                                            <strong class="modal-title ml-5" id="exampleModalLabel"> Price:£{{$item->price}} </strong>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="parent">
+                                    <div class="child bg-one" style="background: url('https://pix10.agoda.net/hotelImages/6591987/-1/a23994d8393c181e0435794275246c29.jpg?s=1024x768')" class="img-fluid">
+                                        <span><a href="#" type="button" class="btn" id="myBtn" data-toggle="modal" data-target="#exampleModal" >VIEW</a></span>
+
+                                        <!------hover image-->
+
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">{{$item->title}}</h5><br>
+
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="uploads/'.$item->image)}}" class="img-fluid"> {{$item->description}}
+                                            </div>
+                                            <strong class="modal-title ml-5" id="exampleModalLabel"> Price:£{{$item->price}} </strong>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <div class="parent">
+                                    <div class="child bg-one">
+                                        <img src="https://assets-cdn.kathmandupost.com/uploads/source/news/2020/money/annapurnahotel-1608561353.jpg" class="img-fluid">
+                                        <span><a href="#" type="button" class="btn" id="myBtn" data-toggle="modal" data-target="#exampleModal" >VIEW</a></span>
+
+                                        <!------hover image-->
+
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">{{$item->title}}</h5><br>
+
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="uploads/'.$item->image)}}" class="img-fluid"> {{$item->description}}
+                                            </div>
+                                            <strong class="modal-title ml-5" id="exampleModalLabel"> Price:£{{$item->price}} </strong>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="theRestaurant pt-5">
+            <div class="parallax-window" style="background-image: url(&quot;https://www.asiafitnesstoday.com/wp-content/uploads/metbkk_bkg_nahm_restaurant.jpg&quot;); transform: matrix(1, 0, 0, 1, 0, 0);">
+                <div class="liner" style="background: url(front/images/liner.png);">
+                    <div class="textOverparallax" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                        <img src="http://www.namastekingstreet.com/wp-content/themes/restrotheme/img/restaurant.png" class="img-fluid">
+                        <h1>Taas Restaurant</h1>
+                        <p class="txtSemiBold">INDULGE IN CULINARY EXCELLENCE</p>
+                        <p>
+                            Taas Restaurant, A beacon of culinary excellence, is a celebration of Indian culture, flavours &amp; hospitality. At Taas Restaurant immerse yourself in a sensory spice experience &amp; awaken your tastebuds with our modern Indian menu, showcasing the
+                            very best of India’s exotic flavors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="triggerSection4"></div>
+        </div>
+
+
+        <div class="theBar">
+            <div class="theBarpara">
+                <div class="calme">
+                    <div class="parassol rouge" style="transform: matrix3d(0.988962, -0.148167, 0, 0, 0.148167, 0.988962, 0, 0, 0, 0, 1, 0, -42.6036, -14.2012, 0, 1);"><img src="front/images/wine.png"></div>
+                    <div class="title" style="opacity: 1.5; transform: translate3d(0px, 0px, 0px);">
+                        <h1>The Bar</h1>
+                        <p>From stunning drops of wine by the glass or a more indulgent bottle paired with sophisticated small pates, we provide one of the best wine experiences that you will ever find</p>
+                    </div>
+                </div>
+                <div class="parallax-window" style="transform: matrix(1, 0, 0, 1, -200, 0);"><img src="http://www.namastekingstreet.com/wp-content/themes/restrotheme/img/section4_1stplan.jpg"></div>
+            </div>
+        </div>
+
+
+        <div class="atTheMenu">
+            <div class="atable">
+                <div class="trigger-salades"></div>
+                <div class="title">
+                    <h1>Take A Look</h1>
+                    <h3>AT THE MENU</h3>
+                </div>
+                <div class="basilic"><img src="http://www.namastekingstreet.com/wp-content/themes/restrotheme/img/basilic.png" class="take-a-look-img"></div>
+                <div class="plate1" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <img src="http://www.namastekingstreet.com/wp-content/themes/restrotheme/img/salade-lentilles.png">
+                    <div class="rollover" data-type="FOOD" data-id="Soup" style="cursor: pointer;">
+                        <div class="roundbtn" style="transform: matrix(0, 0, 0, 0, 0, 0); opacity: 1.02562;">
+                            <svg version="1.1" id="decouvrir" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve" style="opacity: 1;">
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M38.077,69.726v10.841h3.087
+                  c0,0,5.643,0.219,5.643-5.643c0-5.43-6.003-5.214-6.003-5.214L38.077,69.726z"></path>
+              <g>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="101.034,69.889 93.885,69.889 
+                      93.885,80.568 101.052,80.568 	"></polyline>
+                  
+                      <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="101.268" y1="77.272" x2="92.448" y2="77.272"></line>
+              </g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M69.081,71.237c0,0-2.382-2.466-5.893-1.008
+                  s-5.006,7.456-0.09,9.869c0,0,3.336,1.495,5.983-0.846"></path>
+              <circle fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" cx="75.269" cy="74.994" r="5.574"></circle>
+              <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="80.889,69.458 86.436,80.568 
+                  92.011,69.455 "></polyline>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M103.327,80.568V69.727h3.824
+                  c0,0,3.638-0.216,3.638,3.188c0,3.404-3.89,3.35-3.89,3.35l-1.315-0.036l6.339,4.25"></path>
+              <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="48.662" y1="69.619" x2="48.662" y2="80.568"></line>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M59.666,71.256c0,0-1.233-1.915-4.814-1.93
+                  c-3.581-0.015-4.713,3.137-3.519,4.575c1.194,1.438,4.545,1.224,5.845,1.668c1.301,0.444,2.326,1.438,1.76,3.213
+                  c-0.566,1.775-4.751,2.985-7.372,0.422"></path>
+              </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="soup">
+                    Soup<br> <span>Tomato / Mulliagatawny / Green Chicken</span>
+                </div>
+
+                <div class="plate2" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                    <img src="http://www.namastekingstreet.com/wp-content/themes/restrotheme/img/salads.png" class="soup-img">
+                    <div class="rollover" data-type="FOOD" data-id="Salad">
+                        <div class="roundbtn">
+                            <svg version="1.1" id="decouvrir" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M38.077,69.726v10.841h3.087
+                  c0,0,5.643,0.219,5.643-5.643c0-5.43-6.003-5.214-6.003-5.214L38.077,69.726z"></path>
+              <g>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="101.034,69.889 93.885,69.889 
+                      93.885,80.568 101.052,80.568 	"></polyline>
+                  
+                      <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="101.268" y1="77.272" x2="92.448" y2="77.272"></line>
+              </g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M69.081,71.237c0,0-2.382-2.466-5.893-1.008
+                  s-5.006,7.456-0.09,9.869c0,0,3.336,1.495,5.983-0.846"></path>
+              <circle fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" cx="75.269" cy="74.994" r="5.574"></circle>
+              <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="80.889,69.458 86.436,80.568 
+                  92.011,69.455 "></polyline>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M103.327,80.568V69.727h3.824
+                  c0,0,3.638-0.216,3.638,3.188c0,3.404-3.89,3.35-3.89,3.35l-1.315-0.036l6.339,4.25"></path>
+              <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="48.662" y1="69.619" x2="48.662" y2="80.568"></line>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M59.666,71.256c0,0-1.233-1.915-4.814-1.93
+                  c-3.581-0.015-4.713,3.137-3.519,4.575c1.194,1.438,4.545,1.224,5.845,1.668c1.301,0.444,2.326,1.438,1.76,3.213
+                  c-0.566,1.775-4.751,2.985-7.372,0.422"></path>
+              </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="salads-txt">
+                    Salads<br> <span>Garden Salad / Chicken Salad/ Shrimp Salad</span>
+                </div>
+                <div class="plate3" style="transform: matrix3d(0.99818, -0.0603017, 0, 0, 0.0603017, 0.99818, 0, 0, 0, 0, 1, 0, -4.6095, -11.5238, 0, 1);">
+                    <img src="http://www.namastekingstreet.com/wp-content/themes/restrotheme/img/appetizers.png">
+                    <div class="rollover" data-type="FOOD" data-id="Appetizers Veg">
+                        <div class="roundbtn">
+                            <svg version="1.1" id="decouvrir" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M38.077,69.726v10.841h3.087
+                  c0,0,5.643,0.219,5.643-5.643c0-5.43-6.003-5.214-6.003-5.214L38.077,69.726z"></path>
+              <g>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="101.034,69.889 93.885,69.889 
+                      93.885,80.568 101.052,80.568 	"></polyline>
+                  
+                      <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="101.268" y1="77.272" x2="92.448" y2="77.272"></line>
+              </g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M69.081,71.237c0,0-2.382-2.466-5.893-1.008
+                  s-5.006,7.456-0.09,9.869c0,0,3.336,1.495,5.983-0.846"></path>
+              <circle fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" cx="75.269" cy="74.994" r="5.574"></circle>
+              <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="80.889,69.458 86.436,80.568 
+                  92.011,69.455 "></polyline>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M103.327,80.568V69.727h3.824
+                  c0,0,3.638-0.216,3.638,3.188c0,3.404-3.89,3.35-3.89,3.35l-1.315-0.036l6.339,4.25"></path>
+              <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="48.662" y1="69.619" x2="48.662" y2="80.568"></line>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M59.666,71.256c0,0-1.233-1.915-4.814-1.93
+                  c-3.581-0.015-4.713,3.137-3.519,4.575c1.194,1.438,4.545,1.224,5.845,1.668c1.301,0.444,2.326,1.438,1.76,3.213
+                  c-0.566,1.775-4.751,2.985-7.372,0.422"></path>
+              </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="appetizers">
+                    Appetizers<br>
+                    <span>Samosa Chat / Bhel Chat / Aloo Papadi / Raj Kachori <br>
+Pani Poori / Palak Chat / Aloo Tikki</span>
+                </div>
+
+                <div class="plate4" style="transform: matrix3d(0.993158, 0.116778, 0, 0, -0.116778, 0.993158, 0, 0, 0, 0, 1, 0, 8.94159, 0, 0, 1);">
+                    <img src="http://www.namastekingstreet.com/wp-content/themes/restrotheme/img/veg.png">
+                    <div class="rollover" data-type="FOOD" data-id="Shakahari khana">
+                        <div class="roundbtn">
+                            <svg version="1.1" id="decouvrir" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M38.077,69.726v10.841h3.087
+                  c0,0,5.643,0.219,5.643-5.643c0-5.43-6.003-5.214-6.003-5.214L38.077,69.726z"></path>
+              <g>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="101.034,69.889 93.885,69.889 
+                      93.885,80.568 101.052,80.568 	"></polyline>
+                  
+                      <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="101.268" y1="77.272" x2="92.448" y2="77.272"></line>
+              </g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M69.081,71.237c0,0-2.382-2.466-5.893-1.008
+                  s-5.006,7.456-0.09,9.869c0,0,3.336,1.495,5.983-0.846"></path>
+              <circle fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" cx="75.269" cy="74.994" r="5.574"></circle>
+              <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="80.889,69.458 86.436,80.568 
+                  92.011,69.455 "></polyline>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M103.327,80.568V69.727h3.824
+                  c0,0,3.638-0.216,3.638,3.188c0,3.404-3.89,3.35-3.89,3.35l-1.315-0.036l6.339,4.25"></path>
+              <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="48.662" y1="69.619" x2="48.662" y2="80.568"></line>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M59.666,71.256c0,0-1.233-1.915-4.814-1.93
+                  c-3.581-0.015-4.713,3.137-3.519,4.575c1.194,1.438,4.545,1.224,5.845,1.668c1.301,0.444,2.326,1.438,1.76,3.213
+                  c-0.566,1.775-4.751,2.985-7.372,0.422"></path>
+              </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="veg">
+                    Main Course<br>
+                    <span>Paneer Tikka Masala / Mutter Paneer / Butter Chicken / Dal Gosht </span>
+                </div>
+
+                <div class="plate5" style="transform: matrix3d(0.993158, -0.116778, 0, 0, 0.116778, 0.993158, 0, 0, 0, 0, 1, 0, 8.94159, 0, 0, 1);">
+                    <img src="http://www.namastekingstreet.com/wp-content/themes/restrotheme/img/wines.png">
+                    <div class="rollover" data-type="WINE" data-id="Cocktails">
+                        <div class="roundbtn">
+                            <svg version="1.1" id="decouvrir" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M38.077,69.726v10.841h3.087
+                  c0,0,5.643,0.219,5.643-5.643c0-5.43-6.003-5.214-6.003-5.214L38.077,69.726z"></path>
+              <g>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="101.034,69.889 93.885,69.889 
+                      93.885,80.568 101.052,80.568 	"></polyline>
+                  
+                      <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="101.268" y1="77.272" x2="92.448" y2="77.272"></line>
+              </g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M69.081,71.237c0,0-2.382-2.466-5.893-1.008
+                  s-5.006,7.456-0.09,9.869c0,0,3.336,1.495,5.983-0.846"></path>
+              <circle fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" cx="75.269" cy="74.994" r="5.574"></circle>
+              <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="80.889,69.458 86.436,80.568 
+                  92.011,69.455 "></polyline>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M103.327,80.568V69.727h3.824
+                  c0,0,3.638-0.216,3.638,3.188c0,3.404-3.89,3.35-3.89,3.35l-1.315-0.036l6.339,4.25"></path>
+              <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="48.662" y1="69.619" x2="48.662" y2="80.568"></line>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M59.666,71.256c0,0-1.233-1.915-4.814-1.93
+                  c-3.581-0.015-4.713,3.137-3.519,4.575c1.194,1.438,4.545,1.224,5.845,1.668c1.301,0.444,2.326,1.438,1.76,3.213
+                  c-0.566,1.775-4.751,2.985-7.372,0.422"></path>
+              </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="wines">
+                    Wines<br>
+                    <span>Champagne / White Wines / Red Wines / House wine, by glass</span>
+                </div>
+                <svg version="1.1" id="decouvrir" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+          <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M38.077,69.726v10.841h3.087
+              c0,0,5.643,0.219,5.643-5.643c0-5.43-6.003-5.214-6.003-5.214L38.077,69.726z"></path>
+          <g>
+              <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="101.034,69.889 93.885,69.889 
+                  93.885,80.568 101.052,80.568 	"></polyline>
+              
+                  <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="101.268" y1="77.272" x2="92.448" y2="77.272"></line>
+          </g>
+          <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M69.081,71.237c0,0-2.382-2.466-5.893-1.008
+              s-5.006,7.456-0.09,9.869c0,0,3.336,1.495,5.983-0.846"></path>
+          <circle fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" cx="75.269" cy="74.994" r="5.574"></circle>
+          <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" points="80.889,69.458 86.436,80.568 
+              92.011,69.455 "></polyline>
+          <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M103.327,80.568V69.727h3.824
+              c0,0,3.638-0.216,3.638,3.188c0,3.404-3.89,3.35-3.89,3.35l-1.315-0.036l6.339,4.25"></path>
+          <line fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" x1="48.662" y1="69.619" x2="48.662" y2="80.568"></line>
+          <path fill="none" stroke="#FFFFFF" stroke-width="1" stroke-miterlimit="10" d="M59.666,71.256c0,0-1.233-1.915-4.814-1.93
+              c-3.581-0.015-4.713,3.137-3.519,4.575c1.194,1.438,4.545,1.224,5.845,1.668c1.301,0.444,2.326,1.438,1.76,3.213
+              c-0.566,1.775-4.751,2.985-7.372,0.422"></path>
+          </svg>
+                <svg version="1.1" id="tracesvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1031px" height="3544px" viewBox="0 0 1031 3544" enable-background="new 0 0 1031 3544" xml:space="preserve">
+        <path id="p1" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="0" d="M845,14.04
+           c94.488-0.933,147.798,113.116,61,198.96c-112.197,110.964-250.383,70.569-402,133c-110.712,45.587-171.223,130.125-158.981,201.27" style="stroke-dasharray: 977.678px; stroke-dashoffset: 0px; visibility: visible;"></path>
+        <path id="p2" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M395.214,636.783
+           C508.019,750.449,735.719,626.242,785,780c18.75,58.5,0.346,121.5-10.028,149.343" style="stroke-dasharray: 591.916px; stroke-dashoffset: 0px; visibility: visible;"></path>
+        <path id="p3" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M719,1080.551
+           C685.436,1165,677,1284,735,1326c47.015,34.045,115.498,12.164,131-45c16-59-23-111-88-112c-84.843-1.306-125.168,89.977-138.98,151
+           c-15.885,70.191,14.48,139.643,57.16,193.202" style="stroke-dasharray: 1021.02px; stroke-dashoffset: 356px; visibility: visible;"></path>
+        <path id="p4" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M784.698,1636.219
+           c35.149,46.862,48.542,101.471-3.998,141.429c-52.421,39.867-115.838,17.305-165.888-13.571
+           c-53.508-33.005-222.409-144.596-354.4-151.492c-65.354-3.416-132.975,15.642-173.593,70.394
+           c-35.042,47.233-43.539,112.665-22.847,167.587c22.548,59.844,76.491,95.053,137.791,106.104
+           c81.652,14.722,130.323-30.101,213.6-42.669c112.637-17,195.638,54.803,221.399,130.602" style="stroke-dasharray: 1780.42px; stroke-dashoffset: 1780.42px; visibility: hidden;"></path>
+        <path id="p5" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M679.961,2196
+           c15.618,110-32.448,221.008-163.556,202.901C437.362,2387.983,326,2354,248,2411c-69.651,50.899-70.48,127.04-64.81,178.391" style="stroke-dasharray: 787.032px; stroke-dashoffset: 787.032px; visibility: hidden;"></path>
+        <path id="p6" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M223.544,2718.265
+           c19.247,66.11,179.788,263.739,297.122,209.739c49.069-22.583,50-86-0.667-117.333c-43.041-26.617-106-8-114,43.333
+           c-13.321,85.474,76,101.996,136,210.663" style="stroke-dasharray: 943.534px; stroke-dashoffset: 943.534px; visibility: hidden;"></path>
+        <path id="p7" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" d="M597,3185
+           c0,0,60.092,149.502,40.768,359" style="stroke-dasharray: 364.043px; stroke-dashoffset: 364.043px; visibility: hidden;"></path>
+     </svg>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid pt-5 testi-bg">
+            <div class="text-testimonial text-center">
+
+            </div>
+            <!---------slider-->
+            <div class="container my-4 ">
+                <!--Carousel Wrapper-->
+                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                    <!--Controls-->
+                    <!-- <div class="controls-top">
+                  <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                  <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                </div> -->
+                    <!--/.Controls-->
+
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators-->
+
+                    <!--Slides-->
+                    <section>
+                        <div class="container-fluid pt-5 ">
+                            <div class="text-testimonial text-center">
+                                <h4>WHAT OUR CLIENTS SAY</h4>
+                                <p><strong><i>Read what people have said about our restaurant and get excited for your next visit. Book your table today!</i></strong></p>
+                            </div>
+                            <!---------slider-->
+                            <div class="my-4 testmonl ">
+                                <!--Carousel Wrapper-->
+                                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+
+                                        <div class="carousel-item @if($counter == '1') active @endif">
+
+                                            <div class="row">
+                                                <div class=" col-sm-12">
+                                                    <div class="box">
+
+                                                        <br>
+                                                        <div class="box-cont">
+                                                            <div class="img-box">
+                                                                <img src="https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859" alt="man1" class="img-thumbnail" style="height:150px;">
+                                                            </div>
+                                                            <div class="container">
+                                                                <strong>Alex</strong><br>
+                                                                <blockquote class="text-center pt-5">
+                                                                    <p> Miya </p>
+                                                                </blockquote>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-----slider end-->
+
+
+                    <div class="carousel-item ">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="box">
+                                    <div class="img-box">
+                                        <img src="images/man1.jpg" alt="man1" class="img-fluid">
+                                    </div>
+                                    <p>At Urban Tandoor, you will be able to take a delectable culinary tour of India and Nepal. Our specialities include menu items prepared in the traditional Indian clay oven (“tandoor”), grilled items, classic curries,
+                                        and a wide variety of comfort delicacies. The tandoor-based and grilled items are light but highly flavorful, and the curry items provide a wide sampling of curries from North and South India. </p>
+                                    <h4>AAFTAB AALAM<br>
+                                        <span>Creative Director</span></h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box">
+                                    <div class="img-box">
+                                        <img src="images/man1.jpg" alt="man1" class="img-fluid">
+                                    </div>
+                                    <p>At Urban Tandoor, you will be able to take a delectable culinary tour of India and Nepal. Our specialities include menu items prepared in the traditional Indian clay oven (“tandoor”), grilled items, classic curries,
+                                        and a wide variety of comfort delicacies. The tandoor-based and grilled items are light but highly flavorful, and the curry items provide a wide sampling of curries from North and South India. </p>
+                                    <h4>AAFTAB AALAM<br>
+                                        <span>Creative Director</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-6">
+                                <div class="box">
+                                    <div class="img-box">
+                                        <img src="images/man1.jpg" alt="man1" class="img-fluid">
+                                    </div>
+                                    <p>At Urban Tandoor, you will be able to take a delectable culinary tour of India and Nepal. Our specialities include menu items prepared in the traditional Indian clay oven (“tandoor”), grilled items, classic curries,
+                                        and a wide variety of comfort delicacies. The tandoor-based and grilled items are light but highly flavorful, and the curry items provide a wide sampling of curries from North and South India. </p>
+                                    <h4>AAFTAB AALAM<br>
+                                        <span>Creative Director</span></h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box">
+                                    <div class="img-box">
+                                        <img src="images/man1.jpg" alt="man1" class="img-fluid">
+                                    </div>
+                                    <p>At Urban Tandoor, you will be able to take a delectable culinary tour of India and Nepal. Our specialities include menu items prepared in the traditional Indian clay oven (“tandoor”), grilled items, classic curries,
+                                        and a wide variety of comfort delicacies. The tandoor-based and grilled items are light but highly flavorful, and the curry items provide a wide sampling of curries from North and South India. </p>
+                                    <h4>AAFTAB AALAM<br>
+                                        <span>Creative Director</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- <img class="d-block w-100" src="..." alt="Third slide"> -->
+                            <div class="col-md-6">
+                                <div class="box">
+                                    <div class="img-box">
+                                        <img src="images/man1.jpg" alt="man1" class="img-fluid">
+                                    </div>
+                                    <p>At Urban Tandoor, you will be able to take a delectable culinary tour of India and Nepal. Our specialities include menu items prepared in the traditional Indian clay oven (“tandoor”), grilled items, classic curries,
+                                        and a wide variety of comfort delicacies. The tandoor-based and grilled items are light but highly flavorful, and the curry items provide a wide sampling of curries from North and South India. </p>
+                                    <h4>AAFTAB AALAM<br>
+                                        <span>Creative Director</span></h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box">
+                                    <div class="img-box">
+                                        <img src="images/man1.jpg" alt="man1" class="img-fluid">
+                                    </div>
+                                    <p>At Urban Tandoor, you will be able to take a delectable culinary tour of India and Nepal. Our specialities include menu items prepared in the traditional Indian clay oven (“tandoor”), grilled items, classic curries,
+                                        and a wide variety of comfort delicacies. The tandoor-based and grilled items are light but highly flavorful, and the curry items provide a wide sampling of curries from North and South India. </p>
+                                    <h4>AAFTAB AALAM<br>
+                                        <span>Creative Director</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-bg" style="background:linear-gradient( rgba(0,0,0,0.8), rgba(0, 0, 0, 0.555)) , url(front/images/meat-beef.jpg);">
+        <div class="container-fluid pt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="front/images/Taas-Logo.png" alt="pin" class="img-fluid" style="width: 150px;">
+                        <p>szdfcghjkl;}</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="linksq">
+                        <h3>QUICKS LINKS</h3>
+
+                        <li><a href="{{action('Front\FrontController@gallery">Gallery</a></li>
+                        <li><a href="{{action('Front\ContactUsController@index">Contact Us</a></li>
+                        <li><a href="order.html">Order Now</a></li>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>OPENING TIME</h3>
+                    <h5>MONDAY TO FRIDAY</h5>
+                    <P>4:00 PM TO 10:30 PM</P>
+                    <hr>
+                    <h5>SATURDAY </h5>
+                    <P>1:00 PM TO 10:30 PM</P>
+                    <hr>
+                    <h5>SUNDAY </h5>
+                    <P>1:00 PM TO 10:00 PM</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lower-footer text-center" style="background: rgb(13, 2, 31)">All Right Reserve © 2019 <a href="#">Eworks Nepal</a></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
